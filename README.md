@@ -1,5 +1,5 @@
 # Step-by-Step WebGPU Graphics Programming (34) 
-## Create a torus Wireframe
+## Create a 3D Textured Cube
 
 This is the source code for the 34th part of a series YouTube videos on step-by-step WebGPU graphics programming.
 
