@@ -3,8 +3,8 @@ import { CreateShapeWithTexture } from './texture';
 import { CubeData } from './vertex_data';
 import $ from 'jquery';
 
-const CreateShape = async (ul = 1, vl = 1, li:LightInputs = {}, textureFile:string, 
-    addressModeU:GPUAddressMode, addressModeV:GPUAddressMode, isAnimation = true) => {
+const CreateShape = async (ul:number, vl:number, li:LightInputs, textureFile:string, 
+    addressModeU:GPUAddressMode, addressModeV:GPUAddressMode, isAnimation:boolean) => {
     const data = CubeData(ul, vl);
     await CreateShapeWithTexture(data.positions, data.normals, data.uvs, textureFile, addressModeU, addressModeV, li, isAnimation);
 }
