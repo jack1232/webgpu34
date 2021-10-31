@@ -49,3 +49,8 @@ $('#id-addressv').on('change',function(){
     addressModeV = ele.options[ele.selectedIndex].value;
     CreateShape(ul, vl, li, textureFile, addressModeU, addressModeV, isAnimation);
 });
+
+function windowResize() {
+    CreateShape(ul, vl, li, textureFile, addressModeU, addressModeV, isAnimation);
+};
+window.addEventListener('resize', windowResize);
